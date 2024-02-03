@@ -7,7 +7,7 @@ import NextDocument, {
 } from 'next/document';
 
 class Document extends NextDocument {
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getInitialProps(ctx) {
     return await NextDocument.getInitialProps(ctx);
   }
 

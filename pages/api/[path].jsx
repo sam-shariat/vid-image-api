@@ -6,7 +6,7 @@ export const config = {
   runtime: 'experimental-edge',
 };
 
-const OgImageHandler = async (req: NextRequest) => {
+const OgImageHandler = async (req) => {
   const { pathname } = new URL(req.url);
   const name = pathname;
   const title = pathname.slice(5, -4);
